@@ -1,0 +1,71 @@
+.mainadd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+}
+.addmaintext {
+  display: flex;
+  text-align: center;
+  margin-top: -30px;
+  font-size: 60px;
+  color: rgba(0, 0, 49, 0.801);
+}
+.serviceinput {
+  margin: 1px;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+.inpblock {
+  display: flex;
+  flex-direction: column;
+}
+.inpdescr {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(0, 0, 113);
+}
+.addbtn {
+  font-size: 25px;
+  margin-top: 1%;
+  color: rgb(0, 0, 113);
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.homepage {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  width: 80%;
+}
+.aboutus {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  width: 80%;
+}
+.homepageintro {
+  font-size: 55px;
+  color: white;
+  font-weight: 700;
+}
+.homepageserve {
+  color: white;
+  font-size: 40px;
+}
+.homepageweare {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  line-height: 2;
+}

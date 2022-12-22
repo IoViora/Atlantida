@@ -1,0 +1,21 @@
+.notfound {
+  display: flex;
+  justify-content: space-evenly;
+}
+.notfoundleft {
+  font-size: 216px;
+  color: rgba(221, 221, 221, 0.815);
+  font-weight: 600;
+  display: flex;
+}
+.notfoundright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.notfoundtext {
+  display: flex;
+  text-align: center;
+  color: #555;
+  font-size: 40px;
+}

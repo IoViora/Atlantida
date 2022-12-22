@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import { useAuth } from "./contexts/AuthContextProvider";
+import { ADMIN, PASSWORD } from "./helpers/consts";
+import MainRoutes from "./MainRoutes/MainRoutes";
+import service from "./images/atlantis.png";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const {
+    user: { email, uid },
+    user,
+  } = useAuth();
+  if (email) {
+    return (
+      <div
+        style={{
+          backgroundImage: `url(${service})`,
+          minHeight: "100vh",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <Navbar />
+        <MainRoutes />
+        <Footer />
+      </div>
+    );
+  } else {
+    return <MainRoutes />;
+  }
 }
 
 export default App;

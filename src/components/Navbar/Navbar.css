@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.navbar-image {
+  width: 3%;
+  height: 3%;
+}
+.navbar-image:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+
+.navbar-information {
+  color: rgba(255, 255, 255, 0.544);
+  border: none;
+  background-color: rgba(51, 51, 51, 0);
+  font-size: 25px;
+}
+.navbar-information:hover {
+  transform: scale(1.4);
+  transition: 0.2s;
+}
+.navbar-atlantida {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.544);
+  background-color: rgba(51, 51, 51, 0);
+  border: none;
+}
+.navbar-atlantida:hover {
+  transform: scale(1.4);
+  transition: 0.2s;
+}
